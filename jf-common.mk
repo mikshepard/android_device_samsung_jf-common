@@ -278,3 +278,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Common Qualcomm
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
+
+# Audio configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf
